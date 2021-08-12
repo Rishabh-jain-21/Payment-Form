@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Pay PAL</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div style="text-align: center;">
+        <h1>Payment Form</h1>
+        <h2>Fill Personal Information</h2>
+        <span class="red">* </span><span>is compulsory Feild</span>
+        <br><br>
+        <hr>
+    </div>
+      
+        <form action="" target="_blank" method="POST"><br>
+            <label for="name">Enter Name <span class="red">*</span> : </label> <input type="text" id="name" name="name" placeholder="Name here" required>
+            <br>
+            <br>
+            <label for="password">Enter password <span class="red">*</span> : </label> <input type="password" id="password" name="password" placeholder="Password here" required>
+            <br>
+            <br>
+            <fieldset class="choose"> 
+                <legend><b>Gender</b><span class="red">* </span></legend>
+                <div><label for="male">Male</label><input type="radio" id="male" name="gender" value="male" required></div>
+               <div><label for="female">Female</label> <input type="radio" id="female" name="gender" value="female"></div>
+               <div><label for="other">Other</label> <input type="radio" id="other" name="gender" value="others"></div>
+            </fieldset>
+            <br><br>
+            <label for="address">Address : </label><textarea id="address" cols="50" rows="10" placeholder="Enter Your Address......"></textarea>
+            <br>
+            <br>
+            <label for="mail">Enter Email : </label><input type="email" id="mail" placeholder="Example@gmail.com" required>
+            <br>
+            <br>
+            <label for="upload">Upload Document : </label><input type="file" accept=".img ,.jpg , .jpeg ,.png">
+            <br><br>
+            <label for="pincode">Pincode : </label><input type="text" id="pincode" >
+            <br>
+            <br>
+            <hr>
+            <h1>Payment Information</h1>
+            <br>
+            <label for="select">Select Card Type : </label>
+            <select name="Card-Type" id="select">
+            <option value="">--select card type--</option>
+            <option value="credit">Credit Card</option>
+            <option value="visa">Visa</option>
+            <option value="debit">Dredit Card</option>
+            <option value="rupay">Rupay</option>
+            <option value="master">Master Card</option>
+        </select>
+        <br><br>
+        <label for="cvv">CVV : </label><input type="text" name="cvv" id="cvv" maxlength="3" placeholder="Enter numbers only">
+        <br><br>
+        <label for="expiry">Expiration date : </label><input type="date" id="expiry" name="expiration date">
+        <br>
+        <br>
+        <input type="submit" value="Make Payment" class="money">
+        <input type="reset" value="Reset" class="reject">
+        </form>
+    </div>
+    </body>
+</html>

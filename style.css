@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+.red{
+    color: red;
+}
+body{
+    user-select: none;
+    margin: 30px 30px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.container{
+    background-color: #f2f2f2;
+    padding: 30px 20px;
+    border: 2px solid lightgrey;
+    border-radius: 5px;
+}
+.choose{
+    background-color: #ffffff;
+    display: flex;
+    justify-content:space-evenly;
+}
+input[type="text"] , 
+input[type="password"],
+input[type="email"],
+textarea,select
+{
+  
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid lightgrey;
+}
+.money{
+    width: 48%;
+    padding: 1vw;
+    color: white;
+    background-color: green;
+    opacity: .8;
+    border: none;
+    cursor: pointer;
+}
+@media screen and (max-width :700px) {
+    body{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width :300px) {
+    body{
+        font-size: 10px;
+    }
+    .money,.reject{
+        font-size: 10px;
+    }
+}
+.reject{
+    width: 48%;
+    padding: 1vw;
+    color: white;
+    opacity: .8;
+    background-color: rgb(255, 10, 10);
+    border: none;
+    cursor: pointer;
+
+}
+.reject:hover,.money:hover{
+    opacity: 1;
+}
